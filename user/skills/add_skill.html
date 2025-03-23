@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+    <div class="body_container">
+        <div class="header">
+            <a href="/user">Home</a> | <a id="logout_btn">Logout</a>
+        </div>
+        <div class="top_bar">
+            <div>
+                Welcome <span id="first_name"></span>
+            </div>
+            <div>
+                <a href="/user/find/skills.html">Find Skill</a>
+            </div>
+            <div>
+                <a href="/user/skills/sent_skill_requests.html">Sent Skill Requests</a>
+                <a href="/user/skills/received_skill_requests.html">Received Skill Requests</a>
+                <a href="/user/skills/ongoing_skill_swap.html">Ongoing Skill Swap</a>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1>Add Skill</h1>
+            <form id="skill_form">
+                <label for="username">Skill Category:</label>
+                <Select id="skill_category" name="skill_category" required>
+                    <option value="">Select Category</option>
+                    <option value="SQL">SQL</option>
+                    <option value="PHP">PHP</option>
+                </Select>
+
+                <label for="skill_name">Skill Name:</label>
+                <input type="text" id="skill_name" name="skill_name" required>
+
+                <label for="skill_description">Skill Description:</label>
+                <textarea id="skill_description" name="skill_description" required></textarea>
+
+                <label for="skill_level">Skill Level:</label>
+                <Select id="skill_level" name="skill_level"required>
+                    <option value="">Select Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="expert">Expert</option>
+                </Select>
+
+                <label for="available_day">Available Day</label>
+                <input type="text" id="available_day" name="available_day" required>
+
+                <label for="start_time">Start Time</label>
+                <input type="time" id="start_time" name="start_time" required>
+
+                <label for="end_time">End Time</label>
+                <input type="time" id="end_time" name="end_time" required>
+
+                <button type="button" id="create_skill_btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../assets/js/logged_in.js" type="module"></script>
+    <script src="../../assets/js/logout.js" type="module"></script>
+    <script src="../../assets/js/create_skill.js" type="module"></script>
+</body>
+</html>

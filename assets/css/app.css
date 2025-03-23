@@ -1,0 +1,300 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=time], input[type=date], input[type=number], textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#banner {
+  height: 400px;
+  background: url("./../images/home_bg.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#banner h1 {
+  margin: 0;
+  padding: 0;
+}
+#banner div {
+  border: 0;
+}
+#banner div button {
+  width: 100%;
+}
+
+.login_container {
+  background: url("./../images/login_bg.jpg") no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.login_container form {
+  width: 300px;
+}
+
+.registration_container {
+  background: url("./../images/signup_bg.jpg") no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.registration_container form {
+  width: 300px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body_container {
+  border: 0;
+  min-height: 50vh;
+}
+
+.header {
+  background: green;
+}
+.header a {
+  color: #fff;
+}
+.header a#logout_btn {
+  background: red;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.top_bar {
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  border: 0.1em solid #ccc;
+}
+.top_bar .full_width {
+  width: 100%;
+}
+.top_bar div {
+  border: 0;
+  box-shadow: none;
+}
+.top_bar input, .top_bar select {
+  width: 250px;
+  margin: 10px;
+}
+.top_bar button {
+  background: #3498db;
+}
+.top_bar a {
+  font-weight: bold;
+  color: green;
+  margin-right: 10px;
+  border: 0.1em solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item_container {
+  margin: 0;
+  padding: 0;
+}
+.item_container .item {
+  height: 50px;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  background: #f7f7f7;
+}
+.item_container .item .full_width {
+  width: 100%;
+}
+.item_container .item div {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.item_container .item div.label {
+  font-weight: bold;
+}
+.item_container .item button {
+  background: #3498db;
+}
+.item_container .item:nth-child(odd) {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.skill_card {
+  border: 0.1em solid #ccc;
+}
+.skill_card .id_section {
+  justify-content: space-between;
+}
+.skill_card div {
+  margin: 0;
+  height: auto;
+  padding: 5px;
+}
+.skill_card .label {
+  color: #aaa;
+}
+.skill_card .value {
+  width: 100%;
+}
+.skill_card .full_width {
+  width: 100%;
+}
+.skill_card input, .skill_card select {
+  width: 28%;
+}
+.skill_card button, .skill_card a {
+  background: #3498db;
+  padding: 5px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.flex_container .item {
+  min-width: 250px;
+}
+.flex_container .item .label {
+  font-size: 9pt;
+  color: #aaa;
+}
+.flex_container .item .value {
+  font-size: 11pt;
+  color: #444;
+}
+.flex_container .item a {
+  background: #3498db;
+  color: #fff;
+  padding: 10px;
+}
+.flex_container input, .flex_container select {
+  width: 300px;
+  margin: 5px;
+}
+
+form label, form input, form textarea, form button {
+  display: block;
+  width: 100%;
+}
+
+.profile-list-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.profile-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-container button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #2980b9;
+}/*# sourceMappingURL=app.css.map */

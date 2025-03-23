@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+    <div class="body_container">
+        <div class="header">
+            <a href="/user">Home</a> | <a id="logout_btn" href="">Logout</a>
+        </div>
+
+        <div class="top_bar">
+            <div>
+                Welcome <span id="first_name"></span>
+            </div>
+            <div>
+                <a href="/user/skills/add_skill.html">Add Skill</a>
+                <a href="/user/find/skills.html">Find Skill</a>
+            </div>
+            <div>
+                <a href="/user/skills/sent_skill_requests.html">Sent Skill Requests</a>
+                <a href="/user/skills/received_skill_requests.html">Received Skill Requests</a>
+                <a href="/user/skills/ongoing_skill_swap.html">Ongoing Skill Swap</a>
+            </div>
+        </div>
+
+        <div class="top_bar" style="padding:10px">
+            <h1>Find Skills</h1>
+            <button id="find_all_skills_btn">Find All</button>
+        </div>
+        
+        <div class="flex_container">
+            
+            <input type="text" name="" id="skill_name" placeholder="Skill name...">
+            <select name="" id="skill_category">
+                <option value="">Find skill by category</option>
+                <option value="SQL">SQL</option>
+                <option value="PHP">PHP</option>
+            </select>
+            <Select id="skill_level" name="skill_level"required>
+                <option value="">Select Level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="expert">Expert</option>
+            </Select>
+            <button id="find_btn">Find</button>
+        </div>
+
+        <div>
+            <h2>Found Skills</h2>
+            <div id="skill_container" class="body_container">
+                All found skills will appear here
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/logged_in.js" type="module"></script>
+    <script src="../../assets/js/logout.js" type="module"></script>
+    <script src="../../assets/js/find_skills.js" type="module"></script>
+</body>
+</html>

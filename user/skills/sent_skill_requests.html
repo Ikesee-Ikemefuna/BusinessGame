@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+    <div class="body_container">
+        <div class="header">
+            <a href="/user">Home</a> | <a id="logout_btn" href="">Logout</a>
+        </div>
+
+        <div class="top_bar">
+            <div>
+                Welcome <span id="first_name"></span>
+            </div>
+            <div>
+                <a href="/user/skills/add_skill.html">Add Skill</a>
+                <a href="/user/find/skills.html">Find Skill</a>
+            </div>
+            <div>
+                <a href="/user/skills/received_skill_requests.html">Received Skill Requests</a>
+                <a href="/user/skills/ongoing_skill_swap.html">Ongoing Skill Swap</a>
+            </div>
+        </div>
+
+
+
+        <div class="body_container">
+            You Sent Skill-Share Request to the following:
+
+            <div id="skill_container">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/logged_in.js" type="module"></script>
+    <script type="module" src="../../assets/js/logout.js"></script>
+    <script type="module" src="../../assets/js/sent_skill_requests.js"></script>
+</body>
+</html>

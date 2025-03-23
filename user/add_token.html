@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+    <div class="body_container">
+        <div class="header">
+            <a href="/user">Home</a> | <a id="logout_btn">Logout</a>
+        </div>
+        <div class="top_bar">
+            <div>
+                Welcome <span id="first_name"></span>
+            </div>
+            <div>
+                <a href="/user/find/skills.html">Find Skill</a>
+            </div>
+            <div>
+                <a href="/user/skills/sent_skill_requests.html">Sent Skill Requests</a>
+                <a href="/user/skills/received_skill_requests.html">Received Skill Requests</a>
+                <a href="/user/skills/ongoing_skill_swap.html">Ongoing Skill Swap</a>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1>Add Token</h1>
+            <form id="token_form">
+                <label for="skill_name">Amount:</label>
+                <input type="text" id="amount" name="amount" required>
+
+                <label>Payment Method</label>
+                <Select name="payment_method" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="Credit card">Credit Card</option>
+                </Select>
+
+                <button type="button" id="top_up_btn">Top Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../assets/js/logged_in.js" type="module"></script>
+    <script src="../../assets/js/logout.js" type="module"></script>
+    <script src="../../assets/js/token.js" type="module"></script>
+</body>
+</html>
